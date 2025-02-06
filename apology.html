@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #f8d7da, #f5c6cb);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background 0.5s ease; /* Smooth background transition */
+        }
+        .apology-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+            width: 45%;
+            min-width: 350px;
+            max-width: 700px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for movement and shadow */
+        }
+        .apology-box:hover {
+            transform: scale(1.02); /* Slight zoom effect on hover */
+            box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+        }
+        .apology-header {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #721c24;
+            text-transform: uppercase;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+        .apology-header:hover {
+            color: #f5c6cb; /* Change header color on hover */
+        }
+        .message-box {
+            background-color: #f8d7da;
+            padding: 15px;
+            border-radius: 5px;
+            color: #721c24;
+            font-size: 18px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease; /* Smooth background color transition */
+        }
+        .message-box:hover {
+            background-color: #f5c6cb; /* Slight color change on hover */
+        }
+        .button {
+            width: 100%;
+            background-color: #721c24;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background color transition */
+        }
+        .button:hover {
+            background-color: #f08080;
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+        .back-button {
+            background-color: #d9534f;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background color transition */
+        }
+        .back-button:hover {
+            background-color: #c9302c;
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="apology-box">
+        <div class="apology-header">Apology Letter</div>
+        <div class="message-box">
+            <p>I am sorry for not being what you expected this time, its totally my fault i agree, the sorrow of missing out the opportunity to hand you the letter of my dreams have shattered my heart and i cant expain how i am feeling right now about it, but as my situation is willing to improve now, i promise to make up for everything that has happened and trust me i will never let you be this disappointed ever again in your life. Im sorry bbg </p>
+        </div>
+        <button class="button" onclick="acceptApology()">I Forgive You</button>
+        <button class="back-button" onclick="goBack()">End</button>
+    </div>
+
+    <script>
+        function acceptApology() {
+            alert("Thank you for your forgiveness! Moving forward together. 💖");
+            // Optionally redirect to another page
+            setTimeout(() => {
+                window.location.href = 'index.html'; // Redirect back to the main page or any other page
+            }, 2000);
+        }
+
+        function goBack() {
+            window.location.href = 'trivia.html'; // Go back to the love letter page
+        }
+    </script>
+</body>
+</html>

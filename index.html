@@ -1,0 +1,302 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Much Do You Love Me?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            min-width: 350px;
+            max-width: 600px;
+        }
+        .slider {
+            width: 80%;
+            margin: 10px 0;
+        }
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+        .response {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .doodle {
+            margin-top: 10px;
+            font-size: 50px;
+        }
+        .next-page {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>How much do you love me? 💕</h2>
+        <input type="range" min="0" max="500" value="0" class="slider" id="loveSlider">
+        <p id="loveValue">0%</p>
+        <button class="button" onclick="respondLove()">Submit</button>
+        <div class="response" id="responseText"></div>
+        <div class="doodle" id="doodle"></div>
+        <a href="nextpage.html" class="button next-page" id="nextPage">Next Page</a>
+    </div>
+
+    <script>
+        document.getElementById("loveSlider").addEventListener("input", function() {
+            document.getElementById("loveValue").innerText = this.value + "%";
+        });
+
+        function respondLove() {
+            const sliderValue = document.getElementById("loveSlider").value;
+            const responseText = document.getElementById("responseText");
+            const doodle = document.getElementById("doodle");
+            const nextPage = document.getElementById("nextPage");
+            
+            if (sliderValue >= 0 && sliderValue <= 100) {
+                responseText.innerText = "I'm disappointed... Try again! 😔";
+                doodle.innerText = "💔";
+            } else if (sliderValue > 100 && sliderValue <= 300) {
+                responseText.innerText = "Hmm... that's still not enough! 😜";
+                doodle.innerText = "😆";
+            } else if (sliderValue > 300 && sliderValue < 500) {
+                responseText.innerText = "Almost there, but I need MORE love! 😍";
+                doodle.innerText = "💖";
+            } else if (sliderValue == 500) {
+                responseText.innerText = "WOW! You really love me! 💕🥰";
+                doodle.innerText = "🎉💘";
+                nextPage.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Much Do You Love Me?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            min-width: 350px;
+            max-width: 600px;
+        }
+        .slider {
+            width: 80%;
+            margin: 10px 0;
+        }
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+        .response {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .doodle {
+            margin-top: 10px;
+            font-size: 50px;
+        }
+        .next-page {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>How much do you love me? 💕</h2>
+        <input type="range" min="0" max="500" value="0" class="slider" id="loveSlider">
+        <p id="loveValue">0%</p>
+        <button class="button" onclick="respondLove()">Submit</button>
+        <div class="response" id="responseText"></div>
+        <div class="doodle" id="doodle"></div>
+        <a href="nextpage.html" class="button next-page" id="nextPage">Next Page</a>
+    </div>
+
+    <script>
+        document.getElementById("loveSlider").addEventListener("input", function() {
+            document.getElementById("loveValue").innerText = this.value + "%";
+        });
+
+        function respondLove() {
+            const sliderValue = document.getElementById("loveSlider").value;
+            const responseText = document.getElementById("responseText");
+            const doodle = document.getElementById("doodle");
+            const nextPage = document.getElementById("nextPage");
+
+            if (sliderValue >= 0 && sliderValue <= 100) {
+                responseText.innerText = "I'm disappointed... Try again! 😔";
+                doodle.innerText = "💔";
+            } else if (sliderValue > 100 && sliderValue <= 300) {
+                responseText.innerText = "Hmm... that's still not enough! 😜";
+                doodle.innerText = "😆";
+            } else if (sliderValue > 300 && sliderValue < 500) {
+                responseText.innerText = "Almost there, but I need MORE love! 😍";
+                doodle.innerText = "💖";
+            } else if (sliderValue == 500) {
+                responseText.innerText = "WOW! You really love me! 💕🥰";
+                doodle.innerText = "🎉💘";
+                nextPage.style.display = "block";
+
+                // Redirect to the third page (Love Letter)
+                setTimeout(() => {
+                    window.location.href = 'home.html'; // Redirect to the third page
+                }, 2000);
+            }
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Much Do You Love Me?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            min-width: 350px;
+            max-width: 600px;
+        }
+        .slider {
+            width: 80%;
+            margin: 10px 0;
+        }
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+        .response {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .doodle {
+            margin-top: 10px;
+            font-size: 50px;
+        }
+        .next-page {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>How much do you love me? 💕</h2>
+        <input type="range" min="0" max="500" value="0" class="slider" id="loveSlider">
+        <p id="loveValue">0%</p>
+        <button class="button" onclick="respondLove()">Submit</button>
+        <div class="response" id="responseText"></div>
+        <div class="doodle" id="doodle"></div>
+        <a href="#" class="button next-page" id="nextPage" onclick="goToNextPage()">Next Page</a>
+    </div>
+
+    <script>
+        document.getElementById("loveSlider").addEventListener("input", function() {
+            document.getElementById("loveValue").innerText = this.value + "%";
+        });
+
+        function respondLove() {
+            const sliderValue = document.getElementById("loveSlider").value;
+            const responseText = document.getElementById("responseText");
+            const doodle = document.getElementById("doodle");
+            const nextPage = document.getElementById("nextPage");
+            
+            if (sliderValue >= 0 && sliderValue <= 100) {
+                responseText.innerText = "I'm disappointed... Try again! 😔";
+                doodle.innerText = "💔";
+                nextPage.style.display = "none"; // Hide the Next Page button
+            } else if (sliderValue > 100 && sliderValue <= 300) {
+                responseText.innerText = "Hmm... that's still not enough! 😜";
+                doodle.innerText = "😆";
+                nextPage.style.display = "none"; // Hide the Next Page button
+            } else if (sliderValue > 300 && sliderValue < 500) {
+                responseText.innerText = "Almost there, but I need MORE love! 😍";
+                doodle.innerText = "💖";
+                nextPage.style.display = "none"; // Hide the Next Page button
+            } else if (sliderValue == 500) {
+                responseText.innerText = "WOW! You really love me! 💕🥰";
+                doodle.innerText = "🎉💘";
+                nextPage.style.display = "block"; // Show the Next Page button
+            }
+        }
+
+        function goToNextPage() {
+            // Redirect to the third page (Love Letter)
+            window.location.href = 'home.html'; 
+        }
+    </script>
+</body>
+</html>
+
