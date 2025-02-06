@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #ffe4e1, #ffb6c1);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background 0.5s ease; /* Smooth background transition */
+        }
+        .message-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            min-width: 350px;
+            max-width: 600px;
+            text-align: left;
+            resize: both;
+            overflow: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for movement and shadow */
+        }
+        .message-box:hover {
+            transform: scale(1.02); /* Slight zoom effect on hover */
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+        .header {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+        .header:hover {
+            color: #ff69b4; /* Change header color on hover */
+        }
+        .input-field, .textarea-field {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth border color transition */
+        }
+        .input-field:focus, .textarea-field:focus {
+            border-color: #ff69b4; /* Border color change on focus */
+            box-shadow: 0 0 5px rgba(255, 105, 180, 0.5); /* Light shadow effect when focused */
+        }
+        .textarea-field {
+            height: 100px;
+            resize: vertical;
+        }
+        .button {
+            width: 100%;
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background color transition */
+        }
+        .button:hover {
+            background-color: #ff1493;
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .option-button {
+            background-color: #ddd;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background color and scale transition */
+        }
+        .option-button:hover {
+            background-color: #bbb;
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <div class="header">New Message</div>
+        <label>To:</label>
+        <input type="text" class="input-field" value="My Bonori♡" readonly>
+        <label>Subject:</label>
+        <input type="text" class="input-field" value="My queen's appreciation mail" readonly>
+        <label>Message:</label>
+        <textarea class="textarea-field" readonly>
+Dear Bonori,
+
+I feel the sorrow for not being able to hand you the letter of my dreams, infact i was planning it since a month but in the end i fucked up because of my parents, but i would blame me for that as being a boyfriend i should always have had a plan b ready just in case. But i will not let it stop me from expressing my feeling for you, you are the person of my dreams, I LOVE YOU WITH MY WHOLE HEART, you loved me when i literally was on a verge of ending everything, but it was you who made me rethink about my life. Thank you for being the sunshine of my life, no matter what you will always be that person in my life who would be known forever for my character development in my darkest times. Happy birthday bbg♡ i cherish to be with you forever♡ Thankyou for always making me feel loved♡.
+
+With Love, Future You
+        </textarea>
+        <div class="options">
+            <button class="option-button"> Remind Me</button>
+            <button class="option-button"> Save as Draft</button>
+        </div>
+        <button class="button" onclick="sendMessage()">Next</button>
+    </div>
+    <script>
+          function sendMessage() {
+        alert("Message Sent! Now proceeding to the final Page.");
+        // Redirect to the apology page
+        setTimeout(() => {
+            window.location.href = 'page4.html';
+        }, 2000);
+    }
+    </script>
+</body>
+</html>
